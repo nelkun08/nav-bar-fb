@@ -1,4 +1,65 @@
-.dropdown-menu.show{
-    display: block !important;
-    right: 0 !important;
+
+.nav-link img{
+    width: 1.6vw;
 }
+.ppic img{
+    width: 10rem;
+    margin-top: -20px;
+    border: 5px solid grey;
+    border-radius: 50%;
+}
+
+/*--------------left body----------------*/
+
+#leftnavigation {
+    flex-basis: 20%;
+    height: 100%;
+    padding-left: 10px;
+    position: sticky;
+    left: 0;
+    top: 75px;
+  }
+  
+  .imp-links {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 98%;
+  }
+  
+  .shortcut-links {
+    padding: 10px;
+    width: 56%;
+  }
+  
+  .imp-links a,
+  .shortcut-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #000000;
+    width: fit-content;
+  }
+  
+  .imp-links a i {
+    width: 25px;
+    margin: 0 10px;
+  }
+  
+  .imp-links img {
+    width: 25px;
+    margin: 0 10px;
+  }
+  
+  .shortcut-links a i {
+    width: 25px;
+    margin: 0 10px;
+  }
+  
+  .imp-links a:last-child {
+    color: blue;
+  }
+  
+  .shortcut-links a:last-child {
+    color: blue;
+  }
