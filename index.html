@@ -12,87 +12,775 @@
 </head>
 
 <body>
-  <!--------------------navbar-------------------------->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-    <div class="container-fluid bg-dark-subtle">
-      <a class="navbar-brand" href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #0957dc;"></i></a>
-      <form class="d-flex me-auto" role="search">
-        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-      </form>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-list-ul fa-2xl"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-brands fa-facebook-messenger fa-2xl"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-bell fa-2xl"></i></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="profile.png">
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <div class="container-fluid p-2">
-                <div class="container">
-                  <li><a class="dropdown-item" href="profile.html">Ronnel Smith</a></li>
+  <div class="container-fluid p-0">
+    <!--------------------navbar-------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 fixed-top home">
+      <div class="container-fluid bg-dark-subtle">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #0957dc;"></i></a>
+        <form class="d-flex me-auto" role="search">
+          <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--middle buttons-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"><i class="fa-solid fa-house fa-2xl"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-tv fa-2xl"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-store fa-2xl"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-user-group fa-2xl"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-gamepad fa-2xl"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--right buttons-->
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-list-ul fa-2xl"></i></a>
+            </li>
+            <!--chats-->
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-brands fa-facebook-messenger fa-2xl"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end notif">
+                <div class="container-fluid p-2">
+                  <div class="container-fluid d-flex justify-content-between">
+                    <p class="fw-bold">Chats</p>
+                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                  </div>
+                  <div class="container-fluid d-flex p-2">
+                    <li><a class="rounded-pill" href="#">Inbox</a></li>
+                    <li><a class="rounded-pill" href="#">Communities</a></li>
+                  </div>
+                  <img src="chats.png">
+                </div>
+              </ul>
+            </li>
+            <!--notification-->
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell fa-2xl"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end notif">
+                <div class="container-fluid p-2">
+                  <div class="container-fluid d-flex justify-content-between">
+                    <p class="fw-bold">Notifications</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="container-fluid d-flex p-2">
+                    <li><a class="dropdown-item rounded-pill" href="#">All</a></li>
+                    <li><a class="dropdown-item rounded-pill" href="#">Unread</a></li>
+                  </div>
+                  <div class="container-fluid p-2 d-flex justify-content-between">
+                    <div class="div">
+                      <p class="fw-bold">Earlier</p>
+                    </div>
+                    <div class="div">
+                      <a class="text-primary text-decoration-none" href="#">See all</a>
+                    </div>
+                  </div>
+                  <img src="notif.png">
+                </div>
+              </ul>
+            </li>
+            <!--profile-->
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="profile.png">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <div class="container-fluid p-2">
+                  <div class="container border rounded">
+                    <li><a class="dropdown-item" href="profile.html">Ronnel Smith</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-primary" href="#">See all Profiles</a></li>
+                  </div>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item text-primary" href="#">See all Profiles</a></li>
+                  <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+                  <li><a class="dropdown-item" href="#">Help & support</a></li>
+                  <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Give feedback</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
                 </div>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
-                <li><a class="dropdown-item" href="#">Help & support</a></li>
-                <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
-                <li><a class="dropdown-item" href="#">Give feedback</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </div>
-            </ul>
-          </li>
-        </ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!------------------------------------------------------->
+    </nav>
 
-  <!-------------left container----------------->
-  
-    <div class="container-fluid">
-      <div id="container leftnavigation">
-        <div class="container-fluid">
-          <div class="left-sidebar">
-            <div class="imp-links">
-              <a href="#"><img src="profile.png">Ronnel Smith</a>
-              <a href="#"><i class="fa-solid fa-user-group"></i>Friends</a>
-              <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Memories</a>
-              <a href="#"><i class="fa-solid fa-shop-lock"></i>Marketplace</a>
-              <a href="#"><i class="fa-solid fa-tv"></i>Video</a>
-              <a href="#"><i class="fa-solid fa-business-time"></i>Feeds</a>
-              <a href="#"><i class="fa-solid fa-chevron-down"></i>Seemore</a>
+    <!------------------------------------------------------->
+
+    <!-------------left container----------------->
+
+    <div class="container-fluid d-flex justify-content-between pt-5">
+      <div id="leftnavigation" class="h-100 position-sticky">
+        <div class="left-sidebar link1 pt-3">
+          <div class="imp-links p-1">
+            <a href="profile.html"><img src="profile.png">Ronnel Smith</a>
+            <a href="#"><i class="fa-solid fa-user-group"></i>Friends</a>
+            <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Memories</a>
+            <a href="#"><i class="fa-solid fa-shop-lock"></i>Marketplace</a>
+            <a href="#"><i class="fa-solid fa-tv"></i>Video</a>
+            <a href="#"><i class="fa-solid fa-business-time"></i>Feeds</a>
+            <!------------accordion-------------->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed mb-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    See more
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-0">
+                    <a href="#"><i class="fa-solid fa-chart-simple"></i>Ads Manager</a>
+                    <a href="#"><i class="fa-solid fa-droplet" style="color: #e30202;"></i>Blood Donations</a>
+                    <a href="#"><i class="fa-solid fa-leaf"></i>Climate Science Center</a>
+                    <a href="#"><i class="fa-solid fa-calendar-check"></i>Events</a>
+                    <a href="#"><i class="fa-brands fa-gratipay"></i>Fundraisers</a>
+                    <a href="#"><i class="fa-solid fa-dice-d6"></i>Gaming Video</a>
+                    <a href="#"><i class="fa-solid fa-people-group"></i>Groups</a>
+                    <a href="#"><i class="fa-solid fa-shop-lock"></i>Marketplace</a>
+                    <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: #2f6dca;"></i>Messenger</a>
+                    <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: #18e78d;"></i>Messenger Kids</a>
+                    <a href="#"><i class="fa-solid fa-credit-card"></i>Orders and payments</a>
+                    <a href="#"><i class="fa-solid fa-flag"></i>Pages</a>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i>Play Games</a>
+                    <a href="#"><i class="fa-solid fa-chart-simple" style="color: #1c90ca;"></i>Professional dashboard</a>
+                    <a href="#"><i class="fa-solid fa-images"></i>Recent and activity</a>
+                    <a href="#"><i class="fa-solid fa-bookmark"></i>Saved</a>
+
+                  </div>
+                </div>
+              </div>
+
+
             </div>
-            <div class="shortcut-links">
-              <p>Your Shortcuts</p><br>
-              <a href="#"><i class="fa-solid fa-user"></i>Fluff and Flavors Delight</a>
-              <a href="#"><i class="fa-solid fa-user"></i>Nelkun Gaming</a>
-              <a href="#"><i class="fa-solid fa-user"></i>Nelkun Motovlog</a>
-              <a href="#"><i class="fa-solid fa-user"></i>Patrick & friends</a>
-              <a href="#"><i class="fa-solid fa-user"></i>KTM Duke 390</a>
-              <a href="#"><i class="fa-solid fa-chevron-down"></i>Seemore</a>
-            </div>
+            <!----------------------------------->
+            <hr class="hr hr-blurry" />
+          </div>
+          <div class="shortcut-links p-1">
+            <p>Your Shortcuts</p>
+            <a href="#"><i class="fa-solid fa-user"></i>Fluff and Flavors Delight</a>
+            <a href="#"><i class="fa-solid fa-user"></i>Nelkun Gaming</a>
+            <a href="#"><i class="fa-solid fa-user"></i>Nelkun Motovlog</a>
+            <a href="#"><i class="fa-solid fa-user"></i>Patrick & friends</a>
+            <a href="#"><i class="fa-solid fa-user"></i>KTM Duke 390</a>
+            <a href="#"><i class="fa-solid fa-chevron-down"></i>Seemore</a>
           </div>
         </div>
       </div>
-    </div>
+      <!-------------left spacer-------------------->
+      <div class="leftspacer">
 
+      </div>
+      <!--------------------center body-------------------------------->
+      <div id="middle" class="mainbody pt-3 d-block">
+        <div class="container-fluid p-0 d-flex bg-light mb-1 rounded">
+          <div class="container-fluid p-0">
+            <div class="story-gallery">
+              <div class="story story1">
+                <div>
+                  <a href="#"><i class="fa-solid fa-circle-plus fa-xl" style="color: #0d5ed9;"></i></a>
+                  <p>Create Story</p>
+                </div>
+              </div>
+
+              <div class="story story2">
+                <div>
+                  <a href="#"><img src="story2.jpg"></a>
+                  <p>Cong TV</p>
+                </div>
+              </div>
+
+              <div class="story story3">
+                <div>
+                  <a href="#"><img src="story3.jpg"></a>
+                  <p>Junnie Boy</p>
+                </div>
+              </div>
+
+              <div class="story story4">
+                <div>
+                  <a href="#"><img src="story4.jpg"></a>
+                  <p>Boss Keng</p>
+                </div>
+              </div>
+
+              <div class="story story5">
+                <div>
+                  <a href="#"><img src="story5.jpg"></a>
+                  <p>Yow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------write post-------------------->
+        <div class="container border bg-light rounded">
+          <div class="container user-profile d-flex mt-2">
+            <img class="postpic" src="profile.png">&nbsp;&nbsp;
+            <div class=" w-100">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="What's on your mind, Ronnel?"></textarea>
+            </div>
+          </div>
+          <div class="container p-2 add-post-links d-flex justify-content-between">
+            <a class="text-decoration-none" href="#"><i class="fa-solid fa-video" style="color: #e31b0d;"></i> Live
+              Video</a>
+            <a class="text-decoration-none" href="#"><i class="fa-solid fa-images" style="color: #33d214;"></i>
+              Photo/Video</a>
+            <a class="text-decoration-none" href="#"><i class="fa-regular fa-face-smile" style="color: #d47f08;"></i>
+              Feeling/activity</a>
+          </div>
+        </div><br>
+        <!------------------post 1-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">9 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>JAJ</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/dz3-z59qSt4?si=K2hQ1RxOjlGdjT_o"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 2-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">8 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>BIPOR</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/QZBIWFqvRpo?si=jtMBJHS_sVSed39q"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 3-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">7 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>STRAT</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/7SOYaxsgk_s?si=3p1NwybTuVYqTlaR"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 4-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">6 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>FIBAMAX</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/J0HZk6LueX4?si=VCy4I3RDz38ZIkVi"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 5-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">5 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>YOTIBASYON</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/w5ztCjG7Npo?si=ZavKn4U6ASZDuHT3"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 6-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">4 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>TAGILIRAN</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/qAEJie4nf0A?si=IRCtvEexdFE8i6CU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 7-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">3 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>TEMP</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/-sqfc0ssryc?si=1gfwvzftbmgUSbnH"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 8-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">2 days ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>GHOSTBOMBS</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/hu3dkgET5WU?si=YWeU-4PG9Mn7979k"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 9-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">1 day ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>KRAYBINGS</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/W95miJgT8Xk?si=NLbnI2fZA95Yx5XV"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 10-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">1 day ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>SHOCKEN</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/iDVkale0xnM?si=9qHh6cXkEPrC9qb3"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 11-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">1 day ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>PERWEL</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/V_vBhmWkzLY?si=1xB2nAm86hUSbjz0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 12-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">1 day ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>KRASKORS</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/KSX23NFYGtE?si=ieEZ1HAonvkEpTkQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 13-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">1 day ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>MAIBA</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/gnH735ZENVw?si=_8eN1_4qqctQM1sf"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 14-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">1 day ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>MAMA</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/bM68RLKJwmg?si=Bbv1v7uouSTF5mkG"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+        <!------------------post 15-------------------->
+        <div class="container pt-3 bg-light rounded">
+          <div class="xmark d-flex justify-content-between">
+            <div class="post d-flex">
+              <div class="user">
+                <img src="congtv.png">&nbsp;&nbsp;
+              </div>
+              <div class="pname">
+                <a class="text-decoration-none fs-5" href="#">Cong TV</a>
+                <p class="fs-6">1 day ago. <i class="fa-solid fa-earth-europe" style="color: #373a3e;"></i></p>
+              </div>
+            </div>
+            <div class="minix">
+              <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+              <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+            </div>
+          </div>
+          <p>SORNA</p>
+          <div class="feeds">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/z6p91Jh9kf8?si=PuO_7w6h3sSsa-xV"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="container px-5 pb-2 actions d-flex justify-content-between">
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-thumbs-up"></i> Like</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-regular fa-comment"></i> Comment</a>
+            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i> Share</a>
+          </div>
+        </div><br>
+
+
+      </div>
+      <!-------------right spacer-------------------->
+      <div class="rightspacer">
+
+      </div>
+      <!--------------------right navigation-------------------------------->
+      <div id="rightnavigation">
+        <div class="container">
+          <div class="right-sidebar">
+            <div class="sidebar-title">
+              <h4>Events</h4>
+              <a href="#">See All</a>
+            </div>
+            <div class="events">
+              <div class="left-event">
+                <h3>11</h3>
+                <span>September</span>
+              </div>
+              <div class="right-event">
+                <h4>Mark Lester Pascua</h4>
+                <p>Happy Birthday! <i class="fa-solid fa-cake-candles"></i></p>
+                <a href="#">More Info</a>
+              </div>
+            </div>
+            <div class="events">
+              <div class="left-event">
+                <h3>12</h3>
+                <span>April</span>
+              </div>
+              <div class="right-event">
+                <h4>Patrick Dimalanta</h4>
+                <p>Happy Birthday! <i class="fa-solid fa-cake-candles"></i></p>
+                <a href="#">More Info</a>
+              </div>
+            </div>
+            <div class="sidebar-title">
+              <h4>Advertisement</h4>
+              <a href="#">Close</a>
+            </div>
+            <div class="ads-list">
+              <img src="fluffandflavors.png">
+            </div>
+            <div class="sidebar-title">
+              <h4>Contacts</h4>
+              <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+              <div class="online">
+                <img src="congtv.png">
+              </div>
+              <p>Cong TV</p>
+            </div>
+            <div class="online-list">
+              <div class="online">
+                <img src="story3.jpg">
+              </div>
+              <p>Junnie Boy</p>
+            </div>
+            <div class="online-list">
+              <div class="online">
+                <img src="story4.jpg">
+              </div>
+              <p>Boss Keng</p>
+            </div>
+            <div class="online-list">
+              <div class="online">
+                <img src="story5.jpg">
+              </div>
+              <p>Yow</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
