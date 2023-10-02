@@ -1,57 +1,64 @@
-
-.nav-link img{
-    width: 31px;
+.nav-link img {
+  width: 31px;
 }
-.ppic img{
-    width: 10rem;
-    margin-top: -20px;
-    border: 5px solid grey;
-    border-radius: 50%;
+
+.ppic img {
+  width: 10rem;
+  margin-top: -20px;
+  border: 5px solid grey;
+
 }
 
 /*--------------left body----------------*/
 /*--------------left body----------------*/
 
 #leftnavigation {
-    flex-basis: 20%;
-    top: 50px;
-  }
-#middle{
+  flex-basis: 20%;
+  top: 50px;
+}
+
+#middle {
   flex-basis: 40%;
 
 }
-#rightnavigation{
+
+#rightnavigation {
   flex-basis: 20%;
 
 }
-.leftspacer, 
-.rightspacer{
+
+/*----right and left spacer----------*/
+.leftspacer,
+.rightspacer {
   flex-basis: 10%;
+/*---------------------------------*/
 }
-  
-  .imp-links a,
-  .shortcut-links a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    color: #000000;
-    width: fit-content;
-  }
-  
-  .imp-links a i {
-    margin: 0 10px;
-  }
-  
-  .imp-links img {
-    width: 25px;
-    margin: 0 10px;
-  }
-  .shortcut-links a i {
-    margin: 0 10px;
-  }
- /*center body*/
- /*--------------center body----------------*/
+
+.imp-links a,
+.shortcut-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #000000;
+  width: fit-content;
+}
+
+.imp-links a i {
+  margin: 0 10px;
+}
+
+.imp-links img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+.shortcut-links a i {
+  margin: 0 10px;
+}
+
+/*center body*/
+/*--------------center body----------------*/
 .story img {
   position: absolute;
   width: 45px;
@@ -60,12 +67,6 @@
   left: 10px;
   border-radius: 50px;
   border: 2px solid blue;
-}
-
-.story-gallery {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .story {
@@ -86,12 +87,7 @@
   border-radius: 10px;
 }
 
-.story1,
-.story2,
-.story3,
-.story4,
-.story5 p {
-  text-align: center;
+.story1 p {
   color: white;
 }
 
@@ -123,38 +119,17 @@
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(story5.jpg);
 }
 
-/*--------------right body----------------*/
+/*--------------right navigation----------------*/
 #rightnavigation {
   flex-basis: 20%;
-  height: 100%;
-  padding-top: 10px;
-  padding-right: 10px;
-  position: sticky;
   top: 75px;
-  right: 0;
 }
-
-.right-sidebar {
-  height: 100%;
-}
-
 .sidebar-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
 }
 
-.sidebar-title h4 {
-  font-weight: 600;
-  font-size: 16px;
 
-}
 
-.sidebar-title a {
-  text-decoration: none;
-  color: blue;
-}
+
 
 .ads-list img {
   width: 400px;
@@ -221,14 +196,16 @@ p {
 }
 
 
-.postpic{
+.postpic {
   width: 50px;
   height: 50px;
 }
-.user img{
+
+.user img {
   width: 50px;
   height: 50px;
 }
-.pname a{
+
+.pname a {
   color: black;
 }

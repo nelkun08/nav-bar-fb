@@ -60,11 +60,11 @@
                 <div class="container-fluid p-2">
                   <div class="container-fluid d-flex justify-content-between">
                     <p class="fw-bold">Chats</p>
-                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                    <a class="link-secondary" href="#"><i class="fa-solid fa-ellipsis"></i></a>
                   </div>
                   <div class="container-fluid d-flex p-2">
-                    <li><a class="rounded-pill" href="#">Inbox</a></li>
-                    <li><a class="rounded-pill" href="#">Communities</a></li>
+                    <li><a class="dropdown-item rounded-pill" href="#">Inbox</a></li>
+                    <li><a class="dropdown-item rounded-pill" href="#">Communities</a></li>
                   </div>
                   <img src="chats.png">
                 </div>
@@ -78,8 +78,34 @@
               <ul class="dropdown-menu dropdown-menu-end notif">
                 <div class="container-fluid p-2">
                   <div class="container-fluid d-flex justify-content-between">
-                    <p class="fw-bold">Notifications</p>
-                    <i class="fa-solid fa-ellipsis"></i>
+                    <li>
+                      <p class="fw-bold">Notifications</p>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <div class="container-fluid p-2">
+                          <div class="container border rounded">
+                            <li><a class="dropdown-item" href="#">Ronnel Smith</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="#">See all Profiles</a></li>
+                          </div>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+                          <li><a class="dropdown-item" href="#">Help & support</a></li>
+                          <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
+                          <li><a class="dropdown-item" href="#">Give feedback</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </div>
+                      </ul>
+                    </li>
                   </div>
                   <div class="container-fluid d-flex p-2">
                     <li><a class="dropdown-item rounded-pill" href="#">All</a></li>
@@ -161,11 +187,13 @@
                     <a href="#"><i class="fa-solid fa-people-group"></i>Groups</a>
                     <a href="#"><i class="fa-solid fa-shop-lock"></i>Marketplace</a>
                     <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: #2f6dca;"></i>Messenger</a>
-                    <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: #18e78d;"></i>Messenger Kids</a>
+                    <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: #18e78d;"></i>Messenger
+                      Kids</a>
                     <a href="#"><i class="fa-solid fa-credit-card"></i>Orders and payments</a>
                     <a href="#"><i class="fa-solid fa-flag"></i>Pages</a>
                     <a href="#"><i class="fa-solid fa-gamepad"></i>Play Games</a>
-                    <a href="#"><i class="fa-solid fa-chart-simple" style="color: #1c90ca;"></i>Professional dashboard</a>
+                    <a href="#"><i class="fa-solid fa-chart-simple" style="color: #1c90ca;"></i>Professional
+                      dashboard</a>
                     <a href="#"><i class="fa-solid fa-images"></i>Recent and activity</a>
                     <a href="#"><i class="fa-solid fa-bookmark"></i>Saved</a>
 
@@ -197,39 +225,40 @@
       <div id="middle" class="mainbody pt-3 d-block">
         <div class="container-fluid p-0 d-flex bg-light mb-1 rounded">
           <div class="container-fluid p-0">
-            <div class="story-gallery">
+            <div class="story-gallery d-flex justify-content-between mb-2">
               <div class="story story1">
                 <div>
-                  <a href="#"><i class="fa-solid fa-circle-plus fa-xl" style="color: #0d5ed9;"></i></a>
-                  <p>Create Story</p>
+                  <a class="d-flex justify-content-center text-decoration-none" href="#"><i
+                      class="fa-solid fa-circle-plus fa-xl" style="color: #0d5ed9;"></i></a><br>
+                  <p class="text-center">Create Story</p>
                 </div>
               </div>
 
               <div class="story story2">
                 <div>
                   <a href="#"><img src="story2.jpg"></a>
-                  <p>Cong TV</p>
+                  <p class="position-absolute bottom-0 start-0 text-light bottom-0 end-0 ms-2">Cong TV</p>
                 </div>
               </div>
 
               <div class="story story3">
                 <div>
                   <a href="#"><img src="story3.jpg"></a>
-                  <p>Junnie Boy</p>
+                  <p class="position-absolute bottom-0 start-0 text-light bottom-0 end-0 ms-2">Junnie Boy</p>
                 </div>
               </div>
 
               <div class="story story4">
                 <div>
                   <a href="#"><img src="story4.jpg"></a>
-                  <p>Boss Keng</p>
+                  <p class="position-absolute bottom-0 start-0 text-light bottom-0 end-0 ms-2">Boss Keng</p>
                 </div>
               </div>
 
               <div class="story story5">
                 <div>
                   <a href="#"><img src="story5.jpg"></a>
-                  <p>Yow</p>
+                  <p class="position-absolute bottom-0 start-0 text-light bottom-0 end-0 ms-2">Yow</p>
                 </div>
               </div>
             </div>
@@ -711,12 +740,17 @@
 
       </div>
       <!--------------------right navigation-------------------------------->
-      <div id="rightnavigation">
+      <div id="rightnavigation" class="position-sticky h-100">
         <div class="container">
-          <div class="right-sidebar">
-            <div class="sidebar-title">
-              <h4>Events</h4>
-              <a href="#">See All</a>
+          <div class="right-sidebar h-100">
+            <div class="sidebar-title d-flex">
+              <div>
+                <h6>Events</h6>
+              </div>
+              <div>
+                <p><a class="text-decoration-none" href="#">See All</a></p>
+              </div>
+              
             </div>
             <div class="events">
               <div class="left-event">
@@ -781,6 +815,7 @@
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
