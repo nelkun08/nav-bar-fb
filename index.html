@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="market.html">
+  <link rel="stylesheet" href="video.html">
+  <link rel="stylesheet" href="login.html">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <title>fb navbar</title>
+  <title>Peysbook</title>
   <script src="https://kit.fontawesome.com/6520bf4215.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -16,25 +19,28 @@
     <!--------------------navbar-------------------------->
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 fixed-top home">
       <div class="container-fluid bg-dark-subtle">
-        <a class="navbar-brand" href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #0957dc;"></i></a>
-        <form class="d-flex me-auto" role="search">
-          <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-        </form>
+        <div class="d-flex">
+          <a class="navbar-brand" href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #0957dc;"></i></a>
+          <form class="d-flex me-auto" role="search">
+            <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <!--middle buttons-->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse alwaysshow" id="navbarTogglerDemo">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
             <li class="nav-item">
               <a class="nav-link" href="#home"><i class="fa-solid fa-house fa-2xl"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-tv fa-2xl"></i></a>
+              <a class="nav-link" href="video.html"><i class="fa-solid fa-tv fa-2xl"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-store fa-2xl"></i></a>
+              <a class="nav-link" href="market.html"><i class="fa-solid fa-store fa-2xl"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fa-solid fa-user-group fa-2xl"></i></a>
@@ -44,9 +50,29 @@
             </li>
           </ul>
         </div>
+        <!--middle buttons collapsed-->
+        <div class="collapse navbar-collapse alwaysshow" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"><i class="fa-solid fa-house fa-2xl"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html"><i class="fa-solid fa-tv fa-2xl"></i>Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="market.html"><i class="fa-solid fa-store fa-2xl"></i>Marketplace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-user-group fa-2xl"></i>Groups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-gamepad fa-2xl"></i>Gaming</a>
+            </li>
+          </ul>
+        </div>
         <!--right buttons-->
 
-        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fa-solid fa-list-ul fa-2xl"></i></a>
@@ -102,7 +128,7 @@
                           <li><a class="dropdown-item" href="#">Help & support</a></li>
                           <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
                           <li><a class="dropdown-item" href="#">Give feedback</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                          <li><a class="dropdown-item" href="login.html">Logout</a></li>
                         </div>
                       </ul>
                     </li>
@@ -144,7 +170,7 @@
                   <li><a class="dropdown-item" href="#">Help & support</a></li>
                   <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
                   <li><a class="dropdown-item" href="#">Give feedback</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                  <li><a class="dropdown-item" href="login.html">Logout</a></li>
                 </div>
               </ul>
             </li>
@@ -161,42 +187,71 @@
       <div id="leftnavigation" class="h-100 position-sticky">
         <div class="left-sidebar link1 pt-3">
           <div class="imp-links p-1">
-            <a href="profile.html"><img src="profile.png">Ronnel Smith</a>
-            <a href="#"><i class="fa-solid fa-user-group"></i>Friends</a>
-            <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Memories</a>
-            <a href="#"><i class="fa-solid fa-shop-lock"></i>Marketplace</a>
-            <a href="#"><i class="fa-solid fa-tv"></i>Video</a>
-            <a href="#"><i class="fa-solid fa-business-time"></i>Feeds</a>
-            <!------------accordion-------------->
+            <div class="container-fluid test p-0">
+              <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="profile.html"><img class="ms-0"
+                    src="profile.png">&nbsp;Ronnel Smith</a></div>
+              <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                    class="fa-solid fa-user-group my-auto"></i>&nbsp;Friends</a></div>
+              <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                    class="fa-solid fa-clock-rotate-left my-auto"></i>&nbsp;Memories</a></div>
+              <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                    class="fa-solid fa-store my-auto"></i>&nbsp;Marketplace</a></div>
+              <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                    class="fa-solid fa-tv my-auto"></i>&nbsp;Video</a></div>
+              <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                    class="fa-solid fa-business-time my-auto"></i>&nbsp;Feeds</a></div>
+
+            </div>
+
+            <!------------accordion 1-------------->
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed mb-3" type="button" data-bs-toggle="collapse"
+                  <button class="list accordion-button collapsed mb-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     See more
                   </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body p-0">
-                    <a href="#"><i class="fa-solid fa-chart-simple"></i>Ads Manager</a>
-                    <a href="#"><i class="fa-solid fa-droplet" style="color: #e30202;"></i>Blood Donations</a>
-                    <a href="#"><i class="fa-solid fa-leaf"></i>Climate Science Center</a>
-                    <a href="#"><i class="fa-solid fa-calendar-check"></i>Events</a>
-                    <a href="#"><i class="fa-brands fa-gratipay"></i>Fundraisers</a>
-                    <a href="#"><i class="fa-solid fa-dice-d6"></i>Gaming Video</a>
-                    <a href="#"><i class="fa-solid fa-people-group"></i>Groups</a>
-                    <a href="#"><i class="fa-solid fa-shop-lock"></i>Marketplace</a>
-                    <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: #2f6dca;"></i>Messenger</a>
-                    <a href="#"><i class="fa-brands fa-facebook-messenger" style="color: #18e78d;"></i>Messenger
-                      Kids</a>
-                    <a href="#"><i class="fa-solid fa-credit-card"></i>Orders and payments</a>
-                    <a href="#"><i class="fa-solid fa-flag"></i>Pages</a>
-                    <a href="#"><i class="fa-solid fa-gamepad"></i>Play Games</a>
-                    <a href="#"><i class="fa-solid fa-chart-simple" style="color: #1c90ca;"></i>Professional
-                      dashboard</a>
-                    <a href="#"><i class="fa-solid fa-images"></i>Recent and activity</a>
-                    <a href="#"><i class="fa-solid fa-bookmark"></i>Saved</a>
-
+                  <div class="accordion-body p-0 test">
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-chart-simple my-auto"></i>&nbsp;Ads Manager</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-droplet my-auto" style="color: #e30202;"></i>&nbsp;Blood Donations</a>
+                    </div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-leaf my-auto"></i>&nbsp;Climate Science Center</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-calendar-check my-auto"></i>&nbsp;Events</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-brands fa-gratipay my-auto"></i>&nbsp;Fundraisers</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-dice-d6 my-auto"></i>&nbsp;Gaming Video</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-people-group my-auto"></i>&nbsp;Groups</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-shop-lock my-auto"></i>&nbsp;Marketplace</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-brands fa-facebook-messenger my-auto"
+                          style="color: #2f6dca;"></i>&nbsp;Messenger</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-brands fa-facebook-messenger my-auto" style="color: #18e78d;"></i>&nbsp;Messenger
+                        Kids</a>
+                    </div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-credit-card my-auto"></i>&nbsp;Orders and payments</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-flag my-auto"></i>&nbsp;Pages</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-gamepad my-auto"></i>&nbsp;Play Games</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-chart-simple my-auto" style="color: #1c90ca;"></i>&nbsp;Professional
+                        dashboard</a>
+                    </div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-images my-auto"></i>&nbsp;Recent and activity</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-bookmark my-auto"></i>&nbsp;Saved</a></div>
                   </div>
                 </div>
               </div>
@@ -206,14 +261,41 @@
             <!----------------------------------->
             <hr class="hr hr-blurry" />
           </div>
-          <div class="shortcut-links p-1">
+          <div class="shortcut-links p-1 test">
             <p>Your Shortcuts</p>
-            <a href="#"><i class="fa-solid fa-user"></i>Fluff and Flavors Delight</a>
-            <a href="#"><i class="fa-solid fa-user"></i>Nelkun Gaming</a>
-            <a href="#"><i class="fa-solid fa-user"></i>Nelkun Motovlog</a>
-            <a href="#"><i class="fa-solid fa-user"></i>Patrick & friends</a>
-            <a href="#"><i class="fa-solid fa-user"></i>KTM Duke 390</a>
-            <a href="#"><i class="fa-solid fa-chevron-down"></i>Seemore</a>
+            <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                  class="fa-solid fa-user my-auto"></i>&nbsp;Fluff and Flavors Delight</a></div>
+            <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                  class="fa-solid fa-user my-auto"></i>&nbsp;Nelkun Gaming</a></div>
+            <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                  class="fa-solid fa-user my-auto"></i>&nbsp;Nelkun Motovlog</a></div>
+            <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                  class="fa-solid fa-user my-auto"></i>&nbsp;Patrick & friends</a></div>
+            <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                  class="fa-solid fa-user my-auto"></i>&nbsp;KTM Duke 390</a></div>
+            <!------------accordion 2-------------->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="list accordion-button collapsed mb-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    See more
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body p-0">
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-user my-auto"></i>&nbsp;8 Ball Pool</a></div>
+                    <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                          class="fa-solid fa-user my-auto"></i>&nbsp;Baguio Sumbungan Forums (BSF)</a></div>
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!----------------------------------->
           </div>
         </div>
       </div>
@@ -743,47 +825,45 @@
       <div id="rightnavigation" class="position-sticky h-100">
         <div class="container">
           <div class="right-sidebar h-100">
-            <div class="sidebar-title d-flex">
-              <div>
-                <h6>Events</h6>
-              </div>
-              <div>
-                <p><a class="text-decoration-none" href="#">See All</a></p>
-              </div>
-              
+            <div class="sidebar-title d-flex justify-content-between">
+              <h6 class="my-auto">Events</h6>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">See All</a>
             </div>
             <div class="events">
               <div class="left-event">
-                <h3>11</h3>
-                <span>September</span>
+                <h3>3</h3>
+                <span>May</span>
               </div>
               <div class="right-event">
-                <h4>Mark Lester Pascua</h4>
+                <h4>Ronnel Smith</h4>
                 <p>Happy Birthday! <i class="fa-solid fa-cake-candles"></i></p>
                 <a href="#">More Info</a>
               </div>
             </div>
             <div class="events">
               <div class="left-event">
-                <h3>12</h3>
-                <span>April</span>
+                <h3>16</h3>
+                <span>June</span>
               </div>
               <div class="right-event">
-                <h4>Patrick Dimalanta</h4>
+                <h4>Jessica Flores</h4>
                 <p>Happy Birthday! <i class="fa-solid fa-cake-candles"></i></p>
                 <a href="#">More Info</a>
               </div>
             </div>
-            <div class="sidebar-title">
+            <div class="sidebar-title d-flex justify-content-between">
               <h4>Advertisement</h4>
-              <a href="#">Close</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Close</a>
             </div>
             <div class="ads-list">
               <img src="fluffandflavors.png">
             </div>
-            <div class="sidebar-title">
+            <div class="sidebar-title d-flex justify-content-between">
               <h4>Contacts</h4>
-              <a href="#">Hide Chat</a>
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Hide Chat
             </div>
             <div class="online-list">
               <div class="online">

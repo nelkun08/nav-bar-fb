@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Video | Peysbook</title>
+    <script src="https://kit.fontawesome.com/6520bf4215.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--------------------navbar-------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 fixed-top home">
+        <div class="container-fluid bg-dark-subtle">
+            <a class="navbar-brand" href="index.html"><i class="fa-brands fa-facebook fa-xl"
+                    style="color: #0957dc;"></i></a>
+            <form class="d-flex me-auto" role="search">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--middle buttons-->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html"><i class="fa-solid fa-tv fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html"><i class="fa-solid fa-store fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user-group fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-gamepad fa-2xl"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!--right buttons-->
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-list-ul fa-2xl"></i></a>
+                    </li>
+                    <!--chats-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-brands fa-facebook-messenger fa-2xl"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end notif">
+                            <div class="container-fluid p-2">
+                                <div class="container-fluid d-flex justify-content-between">
+                                    <p class="fw-bold">Chats</p>
+                                    <a class="link-secondary" href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                </div>
+                                <div class="container-fluid d-flex p-2">
+                                    <li><a class="dropdown-item rounded-pill" href="#">Inbox</a></li>
+                                    <li><a class="dropdown-item rounded-pill" href="#">Communities</a></li>
+                                </div>
+                                <img src="chats.png">
+                            </div>
+                        </ul>
+                    </li>
+                    <!--notification-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell fa-2xl"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end notif">
+                            <div class="container-fluid p-2">
+                                <div class="container-fluid d-flex justify-content-between">
+                                    <li>
+                                        <p class="fw-bold">Notifications</p>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <div class="container-fluid p-2">
+                                                <div class="container border rounded">
+                                                    <li><a class="dropdown-item" href="#">Ronnel Smith</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-primary" href="#">See all
+                                                            Profiles</a></li>
+                                                </div>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+                                                <li><a class="dropdown-item" href="#">Help & support</a></li>
+                                                <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
+                                                <li><a class="dropdown-item" href="#">Give feedback</a></li>
+                                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="container-fluid d-flex p-2">
+                                    <li><a class="dropdown-item rounded-pill" href="#">All</a></li>
+                                    <li><a class="dropdown-item rounded-pill" href="#">Unread</a></li>
+                                </div>
+                                <div class="container-fluid p-2 d-flex justify-content-between">
+                                    <div class="div">
+                                        <p class="fw-bold">Earlier</p>
+                                    </div>
+                                    <div class="div">
+                                        <a class="text-primary text-decoration-none" href="#">See all</a>
+                                    </div>
+                                </div>
+                                <img src="notif.png">
+                            </div>
+                        </ul>
+                    </li>
+                    <!--profile-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="profile.png">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <div class="container-fluid p-2">
+                                <div class="container border rounded">
+                                    <li><a class="dropdown-item" href="profile.html">Ronnel Smith</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-primary" href="#">See all Profiles</a></li>
+                                </div>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+                                <li><a class="dropdown-item" href="#">Help & support</a></li>
+                                <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
+                                <li><a class="dropdown-item" href="#">Give feedback</a></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------------->
+    <!------------------body--------------------->
+    <div class="container-fluid d-flex">
+        <!--------------------left navigation----------------------------->
+        <div class="container-fluid leftbodynav pt-5 p-1 h-100 position-sticky">
+            <div class="container-fluid pt-2 pb-2 p-0">
+                <h4>Marketplace</h4>
+                <input class="form-control rounded-pill" list="datalistOptions" id="exampleDataList"
+                    placeholder="Search Marketplace">
+                <datalist id="datalistOptions">
+                    <option value="Motorcycle">
+                    <option value="SUV cars">
+                    <option value="Seddan cars">
+                    <option value="Mountain bikes">
+                    <option value="Smart Phones">
+                </datalist>
+            </div>
+            <div class="container-fluid test p-0">
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                            class="fa-solid fa-tv my-auto"></i>&nbsp;Home</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                            class="fa-solid fa-video my-auto"></i>&nbsp;Live</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                            class="fa-solid fa-clapperboard my-auto"></i>&nbsp;Reels</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                            class="fa-solid fa-laptop my-auto"></i>&nbsp;Shows</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                            class="fa-solid fa-rocket my-auto"></i>&nbsp;Explore</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i
+                            class="fa-solid fa-bookmark my-auto"></i>&nbsp;Saved</a></div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid pt-5 p-0 market-body rightbody">
+            <div class="container">
+                <!------------------post 1-------------------->
+                <div class="container pt-3 bg-light rounded">
+                    <div class="container">
+                        <div class="xmark d-flex justify-content-between">
+                            <div class="post d-flex">
+                                <div class="user">
+                                    <img class="rounded-pill" src="nebrija.jpg">&nbsp;&nbsp;
+                                </div>
+                                <div class="pname">
+                                    <a class="text-decoration-none fs-5" href="#">Edison Bong Nebrija</a>
+                                    <p class="fs-6">6 days ago. <i class="fa-solid fa-earth-europe"
+                                            style="color: #373a3e;"></i></p>
+                                </div>
+                            </div>
+                            <div class="minix">
+                                <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+                                <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <p>Violation</p>
+                        <div class="feeds">
+                            <iframe
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fedisonbongnebrija%2Fvideos%2F587652896841838%2F&show_text=false&width=560&t=0"
+                                width="100%" height="700" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="container px-5 pb-2 actions d-flex justify-content-between">
+                            <a class="text-decoration-none text-secondary" href="#"><i
+                                    class="fa-regular fa-thumbs-up"></i>
+                                Like</a>
+                            <a class="text-decoration-none text-secondary" href="#"><i
+                                    class="fa-regular fa-comment"></i>
+                                Comment</a>
+                            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i>
+                                Share</a>
+                        </div>
+                    </div><br>
+                </div>
+                <!------------------post 2-------------------->
+                <div class="container pt-3 bg-light rounded">
+                    <div class="container">
+                        <div class="xmark d-flex justify-content-between">
+                            <div class="post d-flex">
+                                <div class="user">
+                                    <img class="rounded-pill" src="gadget addict.jpg">&nbsp;&nbsp;
+                                </div>
+                                <div class="pname">
+                                    <a class="text-decoration-none fs-5" href="#">Gadget Addict</a>
+                                    <p class="fs-6">6 days ago. <i class="fa-solid fa-earth-europe"
+                                            style="color: #373a3e;"></i></p>
+                                </div>
+                            </div>
+                            <div class="minix">
+                                <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+                                <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <p>Violation</p>
+                        <div class="feeds">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fytgadgetaddict%2Fvideos%2F994473357759030%2F&show_text=false&width=560&t=0" width="100%" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="container px-5 pb-2 actions d-flex justify-content-between">
+                            <a class="text-decoration-none text-secondary" href="#"><i
+                                    class="fa-regular fa-thumbs-up"></i>
+                                Like</a>
+                            <a class="text-decoration-none text-secondary" href="#"><i
+                                    class="fa-regular fa-comment"></i>
+                                Comment</a>
+                            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i>
+                                Share</a>
+                        </div>
+                    </div><br>
+                </div>
+                <!------------------post 3-------------------->
+                <div class="container pt-3 bg-light rounded">
+                    <div class="container">
+                        <div class="xmark d-flex justify-content-between">
+                            <div class="post d-flex">
+                                <div class="user">
+                                    <img class="rounded-pill" src="supermj.jpg">&nbsp;&nbsp;
+                                </div>
+                                <div class="pname">
+                                    <a class="text-decoration-none fs-5" href="#">Supermj</a>
+                                    <p class="fs-6">6 days ago. <i class="fa-solid fa-earth-europe"
+                                            style="color: #373a3e;"></i></p>
+                                </div>
+                            </div>
+                            <div class="minix">
+                                <a class="text-secondary" href="#"><i class="fa-solid fa-ellipsis fa-xl"></i></a>&nbsp;
+                                <a class="text-secondary" href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <p>Violation</p>
+                        <div class="feeds">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSuperMJfps%2Fvideos%2F224308157079975%2F&show_text=false&width=560&t=0" width="100%" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="container px-5 pb-2 actions d-flex justify-content-between">
+                            <a class="text-decoration-none text-secondary" href="#"><i
+                                    class="fa-regular fa-thumbs-up"></i>
+                                Like</a>
+                            <a class="text-decoration-none text-secondary" href="#"><i
+                                    class="fa-regular fa-comment"></i>
+                                Comment</a>
+                            <a class="text-decoration-none text-secondary" href="#"><i class="fa-solid fa-share"></i>
+                                Share</a>
+                        </div>
+                    </div><br>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

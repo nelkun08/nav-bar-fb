@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="video.html">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="market.css">
+    <title>Marketplace | Peysbook</title>
+    <script src="https://kit.fontawesome.com/6520bf4215.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--------------------navbar-------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 fixed-top home">
+        <div class="container-fluid bg-dark-subtle">
+            <a class="navbar-brand" href="index.html"><i class="fa-brands fa-facebook fa-xl"
+                    style="color: #0957dc;"></i></a>
+            <form class="d-flex me-auto" role="search">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--middle buttons-->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html"><i class="fa-solid fa-tv fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html"><i class="fa-solid fa-store fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user-group fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-gamepad fa-2xl"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!--right buttons-->
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-list-ul fa-2xl"></i></a>
+                    </li>
+                    <!--chats-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-brands fa-facebook-messenger fa-2xl"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end notif">
+                            <div class="container-fluid p-2">
+                                <div class="container-fluid d-flex justify-content-between">
+                                    <p class="fw-bold">Chats</p>
+                                    <a class="link-secondary" href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                </div>
+                                <div class="container-fluid d-flex p-2">
+                                    <li><a class="dropdown-item rounded-pill" href="#">Inbox</a></li>
+                                    <li><a class="dropdown-item rounded-pill" href="#">Communities</a></li>
+                                </div>
+                                <img src="chats.png">
+                            </div>
+                        </ul>
+                    </li>
+                    <!--notification-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell fa-2xl"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end notif">
+                            <div class="container-fluid p-2">
+                                <div class="container-fluid d-flex justify-content-between">
+                                    <li>
+                                        <p class="fw-bold">Notifications</p>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <div class="container-fluid p-2">
+                                                <div class="container border rounded">
+                                                    <li><a class="dropdown-item" href="#">Ronnel Smith</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-primary" href="#">See all
+                                                            Profiles</a></li>
+                                                </div>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+                                                <li><a class="dropdown-item" href="#">Help & support</a></li>
+                                                <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
+                                                <li><a class="dropdown-item" href="#">Give feedback</a></li>
+                                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="container-fluid d-flex p-2">
+                                    <li><a class="dropdown-item rounded-pill" href="#">All</a></li>
+                                    <li><a class="dropdown-item rounded-pill" href="#">Unread</a></li>
+                                </div>
+                                <div class="container-fluid p-2 d-flex justify-content-between">
+                                    <div class="div">
+                                        <p class="fw-bold">Earlier</p>
+                                    </div>
+                                    <div class="div">
+                                        <a class="text-primary text-decoration-none" href="#">See all</a>
+                                    </div>
+                                </div>
+                                <img src="notif.png">
+                            </div>
+                        </ul>
+                    </li>
+                    <!--profile-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="profile.png">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <div class="container-fluid p-2">
+                                <div class="container border rounded">
+                                    <li><a class="dropdown-item" href="profile.html">Ronnel Smith</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-primary" href="#">See all Profiles</a></li>
+                                </div>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Settings & privacy</a></li>
+                                <li><a class="dropdown-item" href="#">Help & support</a></li>
+                                <li><a class="dropdown-item" href="#">Display & accessibility</a></li>
+                                <li><a class="dropdown-item" href="#">Give feedback</a></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------------->
+    <!------------------body--------------------->
+    <div class="container-fluid d-flex">
+        <!--------------------left navigation----------------------------->
+        <div class="container-fluid leftbody pt-5 p-1">
+            <div class="container-fluid pt-2 pb-2 p-0">
+                <h4>Marketplace</h4>
+                <input class="form-control rounded-pill" list="datalistOptions" id="exampleDataList"
+                    placeholder="Search Marketplace">
+                <datalist id="datalistOptions">
+                    <option value="Motorcycle">
+                    <option value="SUV cars">
+                    <option value="Seddan cars">
+                    <option value="Mountain bikes">
+                    <option value="Smart Phones">
+                </datalist>
+            </div>
+            <div class="container-fluid test p-0">
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-store my-auto"></i>&nbsp;Browse All</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-bell my-auto"></i>&nbsp;Notifications</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-inbox my-auto"></i>&nbsp;Inbox</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-bag-shopping my-auto"></i>&nbsp;Buying</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-tag my-auto"></i>&nbsp;Selling</a></div>
+                <div class="pt-2">
+                    <button type="button" class="btn btn-primary w-100">+ Create new listing</button>
+                </div>
+            </div>
+            <hr class="divider">
+            <div>
+                <div>
+                    <h6>Filters</h6>
+                </div>
+                <div class=""><a class="text-decoration-none fs-6 list text-primary" href="#">Tuba, Baguio, Philippines .
+                        Within 80 kilometers</a></div>
+            </div>
+            <hr class="divider">
+            <div class="container-fluid test p-0">
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-car my-auto"></i>&nbsp;Vehicles</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-house-user my-auto"></i>&nbsp;Property Rentals</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-shirt my-auto"></i>&nbsp;Apparel</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-tag my-auto"></i>&nbsp;Classifieds</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-mobile-screen-button my-auto"></i>&nbsp;Electronics</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-video my-auto"></i>&nbsp;Entertainment</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-heart my-auto"></i>&nbsp;Family</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-tags my-auto"></i>&nbsp;Free Stuff</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-tractor my-auto"></i>&nbsp;Garden & Outdoor</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-pen-nib my-auto"></i>&nbsp;Hobbies</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-house-chimney-window my-auto"></i>&nbsp;Home Goods</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-wrench my-auto"></i>&nbsp;Home Improment Supplies</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-house-signal my-auto"></i>&nbsp;Home Sales</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-guitar my-auto"></i>&nbsp;Musical Instruments</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-tag my-auto"></i>&nbsp;Office Supplies</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-paw my-auto"></i>&nbsp;Pet Supplies</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-person-running my-auto"></i>&nbsp;Sporting Goods</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-puzzle-piece my-auto"></i>&nbsp;Toys & Games</a></div>
+                <div class="list p-2 rounded"><a class="text-decoration-none d-flex" href="#"><i class="fa-solid fa-people-group my-auto"></i>&nbsp;Buy and sell & groups</a></div>
+            </div>
+
+
+
+
+        </div>
+        <!-----------------right body--------------------->
+        <div class="container-fluid pt-5 p-0 market-body rightbody">
+            <div class="container-fluid text-center grid">
+                <div class="container-fluid border border-primary rounded newforyou">
+                    <h6 class="text-start pt-2">New for you</h6>
+                    <div class="p-2 border text d-flex">
+                        <img src="market/newforyou.jpg">&nbsp;<a class="text-decoration-none my-auto" href="#">40+ items
+                            were just added to your buy and sell groups.</a>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex justify-content-between">
+                    <h4 class="text-start pt-3">Today's Picks</h4>
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover my-auto"
+                        href="#">
+                        Tuba . 80km
+                    </a>
+                </div>
+
+                <div class="row row-cols-6 pt-3">
+                    <div class="col p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling1.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">$135,000<br>2019 CFMOTO nk400</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling2.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱123<br>Valorant Hardware Cheat</p>
+                        </div>
+
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling3.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱3,500<br>32gb (16gbx2) DDR4 3600mhz RAM</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling4.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱1,380,000<br>2015 Subaru wrx</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling5.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱775,000<br>2021 Kawasaki zh2</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling6.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱330,000<br>Yamaha Fz1N</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling7.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱1,200<br>Xiaomi dashcam</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling8.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱328,000<br>2015 Toyota vios thai concept</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling9.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱730,000<br>HONDA X-ADV 750</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling10.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱1,200<br>WIRELESS KEYBOARD</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling11.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱40,000<br>1999 Kawazaki zxr400</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling12.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱1,500<br>Phil. Army tactical Bagpack</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling13.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱2,200<br>TFZ T2 Galaxy IEM</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling14.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱35,000<br>For sale or swap sa NMAXV1 ADD nlng kayo</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling15.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱1,275,000<br>2013 Toyota 86 aero variant (top of the line)</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling16.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱85,000<br>YAMAHA SNIPER 155 VVA V3</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling17.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱1<br>KTM DUKE 2020 SCALPEL AUSTRIA 790</p>
+                        </div>
+                    </div>
+                    <div class="col border p-1">
+                        <div>
+                            <img class="img-fluid" src="market/selling18.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="text-start">₱7,000<br>Triy way headers 24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

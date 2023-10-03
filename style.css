@@ -9,6 +9,7 @@
 
 }
 
+
 /*--------------left body----------------*/
 /*--------------left body----------------*/
 
@@ -31,31 +32,17 @@
 .leftspacer,
 .rightspacer {
   flex-basis: 10%;
-/*---------------------------------*/
+  /*---------------------------------*/
 }
 
-.imp-links a,
-.shortcut-links a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  color: #000000;
-  width: fit-content;
-}
 
-.imp-links a i {
-  margin: 0 10px;
-}
 
 .imp-links img {
-  width: 25px;
-  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+
 }
 
-.shortcut-links a i {
-  margin: 0 10px;
-}
 
 /*center body*/
 /*--------------center body----------------*/
@@ -124,12 +111,6 @@
   flex-basis: 20%;
   top: 75px;
 }
-.sidebar-title {
-}
-
-
-
-
 
 .ads-list img {
   width: 400px;
@@ -208,4 +189,75 @@ p {
 
 .pname a {
   color: black;
+}
+
+
+/*--------market css---------*/
+.leftbody {
+  background-color: #f8f7f7;
+  flex-basis: 18%;
+  height: 100%;
+  color: #000000;
+}
+
+.leftbody a {
+  color: #000000;
+}
+
+.rightbody {
+  background-color: #e4e4e4;
+  flex-basis: 82%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.col img {
+  width: 100%;
+  height: 12rem;
+
+}
+
+.col {
+  cursor: pointer;
+}
+
+.newforyou img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.list:hover {
+  background: #cccccc;
+}
+
+.test a {
+  color: #000000;
+}
+
+/*---------video css-----------*/
+.leftbodynav {
+  flex-basis: 18%;
+  top: 0;
+}
+
+
+/*----------responsive--------------*/
+@media only screen and (max-width:991px) {
+  #leftnavigation{
+    display: none;
+  }
+  .leftspacer{
+    display: none;
+  }
+  .rightspacer{
+    display: none;
+  }
+  #middle{
+    flex-basis: 60% !important;
+  }
+  #rightnavigation{
+    display: flex;
+    flex-basis: 20% !important;
+  }
 }
