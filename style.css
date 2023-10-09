@@ -241,7 +241,9 @@ p {
   top: 0;
 }
 
-
+.alwayshide{
+  display: none !important;
+}
 /*----------responsive--------------*/
 @media only screen and (max-width:991px) {
   #leftnavigation{
@@ -259,5 +261,8 @@ p {
   #rightnavigation{
     display: flex;
     flex-basis: 20% !important;
+  }
+  .alwayshide{
+    display: flex !important;
   }
 }
