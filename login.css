@@ -135,3 +135,10 @@ img{
     overflow:hidden;
 
 }
+
+
+.eyebtn{
+    cursor: pointer;
+    display: absolute; 
+    top: 28%;
+}
