@@ -140,5 +140,5 @@ img{
 .eyebtn{
     cursor: pointer;
     display: absolute; 
-    top: 28%;
+    top: 0;
 }
