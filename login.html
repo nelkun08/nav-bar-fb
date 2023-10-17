@@ -16,7 +16,7 @@
     <div class="center">
         <img src="loginlogo.png" alt="this is an image">
         <h1>Member Login</h1>
-        <form action="index.html">
+        <div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address *</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
@@ -45,14 +45,14 @@
 
 
             </div>
-            <button class="btn btn-success">LOGIN</button>
+            <button class="btn btn-success" id="login">LOGIN</button>
             <div>
                 <div class="forgot">
                     <a class="acc" href="#">Dont Have an account?</a>
                     <a class="pass" href="#">Forgot Password?</a>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 
     <script>
@@ -67,7 +67,23 @@
                 === "password" ? "text" : "password";
             passwordField.setAttribute("type", type);
         })
+    </script>
+    <script>
+        const login = document.getElementById('login')
 
+        let username = "ronnelsmith32@gmail.com";
+        let password = "nelkun";
+
+        login.onclick = function () {
+            let uname = document.getElementById("exampleFormControlInput1").value;
+            let pass = document.getElementById("inputPassword5").value;
+
+            if (uname === username && pass === password)
+                location.href = 'index.html';
+            else
+                alert("Invalid Username and Password");
+        }
+        
 
     </script>
 </body>
