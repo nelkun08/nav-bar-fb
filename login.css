@@ -139,6 +139,16 @@ img{
 
 .eyebtn{
     cursor: pointer;
-    display: absolute; 
-    top: 0;
+}
+
+.passcontainer{
+    width: 100%;
+    height: 100%;
+    
+    background: #ffffff;
+}
+.passinput {
+    width: 95%;
+    height: 50px;
+    border: none;
 }
