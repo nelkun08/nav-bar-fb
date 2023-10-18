@@ -15,21 +15,24 @@
 <body>
     <div class="center">
         <img src="loginlogo.png" alt="this is an image">
-        <h1>Member Login</h1>
+        <h1 class="text-center">Member Login</h1>
         <div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address *</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+                <div class="input-box p-0">
+                    <input type="email" class="rounded w-100" id="exampleFormControlInput1" placeholder="Enter your email">
+                </div>
+                
             </div>
             <label for="inputPassword5" class="form-label">Password *</label>
-            <div class="container-fluid d-flex p-0 w-100">
-                <input type="password" id="inputPassword5" class="form-control w-100"
+            <div class="input-box container-fluid d-flex p-0 w-100">
+                <input type="password" id="inputPassword5" class="rounded w-100"
                     aria-describedby="passwordHelpBlock" placeholder="Enter your Password" required>
                 <i class="fa-regular fa-eye eyebtn my-auto" id="show-password"></i>
             </div>
 
-            <div id="passwordHelpBlock" class="form-text">
-                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
+            <div id="passwordHelpBlock" class="form-text text-white">
+                Your password must be 6-20 characters long, contain letters and numbers, and must not contain spaces,
                 special characters, or emoji.
             </div>
             <br>
@@ -41,11 +44,12 @@
                     <label class="form-check-label" for="flexCheckDefault">
                         Remember Me
                     </label>
-                </div>
+                </div><br>
 
 
             </div>
-            <button class="btn btn-success" id="login">LOGIN</button>
+            <button class="btn btn-success w-100" id="login">LOGIN</button>
+            <br><br>
             <div>
                 <div class="forgot">
                     <a class="acc" href="#">Dont Have an account?</a>
@@ -55,37 +59,7 @@
         </div>
     </div>
 
-    <script>
-        const showPassword = document.querySelector
-            ("#show-password");
-        const passwordField = document.querySelector
-            ("#inputPassword5");
-
-        showPassword.addEventListener("click", function () {
-            this.classList.toggle("fa-eye-slash");
-            const type = passwordField.getAttribute("type")
-                === "password" ? "text" : "password";
-            passwordField.setAttribute("type", type);
-        })
-    </script>
-    <script>
-        const login = document.getElementById('login')
-
-        let username = "ronnelsmith32@gmail.com";
-        let password = "nelkun";
-
-        login.onclick = function () {
-            let uname = document.getElementById("exampleFormControlInput1").value;
-            let pass = document.getElementById("inputPassword5").value;
-
-            if (uname === username && pass === password)
-                location.href = 'index.html';
-            else
-                alert("Invalid Username and Password");
-        }
-        
-
-    </script>
+    <script src="login.js"></script>
 </body>
 
 </html>
