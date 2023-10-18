@@ -9,58 +9,117 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Document</title>
     <style>
-        
-        * {
+        *{
             margin: 0;
             padding: 0;
+            font-family: 'Poppins', sans-serif;
             box-sizing: border-box;
         }
-
-        body {
-            background: #250057;
+        .container2{
+            width: 100%;
+            height: 100vh;
+            position: relative;
         }
-
-        .input-box {
-            background: #fff;
+        .form-box{
             width: 90%;
-            max-width: 500px;
-            border-radius: 5px;
-            padding: 10px 20px;
-            margin: 200px auto;
+            max-width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #0a7daa;
+            padding: 50px 60px 70px;
+            text-align: center;
+        }
+        .form-box h1{
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 60px;
+            color: #3c00a0;
+            position: relative;
+        }
+        .form-box h1::after{
+            content: '';
+            width: 30px;
+            height: 4px;
+            border-radius: 3px;
+            background: #3c00a0;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .input-field{
+            background: #eaeaea;
+            margin: 15px 0;
+            border-radius: 3px;
             display: flex;
             align-items: center;
+            max-height: 65px;
+            transition: max-height 0.5s;
+            overflow: hidden;
         }
-
-        .input-box input {
+        input{
             width: 100%;
-            padding: 10px 0;
+            background: transparent;
             border: 0;
             outline: 0;
-            font-size: 24px;
-            color: #555;
+            padding: 18px 15px;
+        }
+        .input-field i{
+            margin-left: 15px;
+            color: #999;
         }
 
-        .eyebtn {
+        .btn-field button{
+            flex-basis: 48%;
+            background: #3c00a0;
+            color: #fff;
+            height: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
             cursor: pointer;
+            transition: background 1s;
+
         }
+        .btn-field button.disable{
+            background: #eaeaea;
+            color: #555;
+        }
+        
     </style>
 </head>
 
 <body>
-    <form action="/login" method="POST" id="login-form">
-    <div class="container d-block border h-100">
-        <div class="d-block">
-            <div class="input-box">
-                <input type="email" name="Username" id="username" placeholder="Enter your Username" required>
+    <div class="container2">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group d-block">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
 
-            </div>
-            <div class="input-box">
-                <input type="password" name="Password" id="password" placeholder="Enter your Password" required>
-                <i class="fa-solid fa-eye eyebtn my-auto" id="show-password"></i>
-            </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p class="d-flex">Lost Password&nbsp;<a class="text-decoration-none text-warning" href="#">Click Here!</a></p>
+                </div>
+                <div class="btn-field w-100 d-flex justify-content-between">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+                </div>
+            </form>
         </div>
     </div>
-    </form>
 
 
 </body>

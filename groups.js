@@ -1,12 +1,18 @@
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title");
 
-const showPassword = document.querySelector
-    ("#show-password");
-const passwordField = document.querySelector
-    ("#password");
+signinBtn.onclick = function(){
+    nameField.style.maxHeight = "0";
+    title.innerText = "Sign In";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+}
 
-showPassword.addEventListener("click", function () {
-    this.classList.toggle("fa-eye-slash");
-    const type = passwordField.getAttribute("type")
-    === "password" ? "text" : "password";
-    passwordField.setAttribute("type", type);
-})
+signupBtn.onclick = function(){
+    nameField.style.maxHeight = "65px";
+    title.innerText = "Sign Up";
+    signinBtn.classList.add("disable");
+    signupBtn.classList.remove("disable");
+}
