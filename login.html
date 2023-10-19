@@ -16,11 +16,12 @@
 <body>
     <div class="center">
         <img src="loginlogo.png" alt="this is an image">
-        <h1 class="text-center">Member Login</h1>
+        <h1 class="text-center">Sign In</h1>
         <div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address *</label>
                 <div class="input-box p-0">
+                    <i class="fa-solid fa-envelope my-auto minilogo"></i>
                     <input type="email" class="rounded w-100" id="exampleFormControlInput1"
                         placeholder="Enter your email">
                 </div>
@@ -28,6 +29,7 @@
             </div>
             <label for="inputPassword5" class="form-label">Password *</label>
             <div class="input-box container-fluid d-flex p-0 w-100">
+                <i class="fa-solid fa-lock my-auto minilogo"></i>
                 <input type="password" id="inputPassword5" class="rounded w-100" aria-describedby="passwordHelpBlock"
                     placeholder="Enter your Password" required>
                 <i class="fa-regular fa-eye eyebtn my-auto" id="show-password"></i>
@@ -53,6 +55,10 @@
             <button class="btn btn-success w-100" id="login">LOGIN</button>
             <br><br>
             <div>
+                <div class="btn-field w-100 d-flex justify-content-between">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+                </div>
                 <div class="forgot">
                     <a class="acc" href="#">Dont Have an account?</a>
 

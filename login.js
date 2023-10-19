@@ -45,3 +45,19 @@ email.addEventListener("keyup", e => {
         login.onclick()
     }
 })
+
+
+
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+
+
+signinBtn.onclick = function(){
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+}
+
+signupBtn.onclick = function(){
+    signinBtn.classList.add("disable");
+    signupBtn.classList.remove("disable");
+}
